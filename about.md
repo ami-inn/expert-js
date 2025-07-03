@@ -1,0 +1,1 @@
+The `algos` folder contains in-depth JavaScript problem-solving exercises and algorithm implementations.
