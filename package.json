@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:bubble-sort": "node dist/sorts/bubble-sort/index.js",
-    "start:bogo-sort": "node dist/sorts/bogo-sort/index.js"
+    "start:bogo-sort": "node dist/sorts/bogo-sort/index.js",
+    "start:counting-sort": "node dist/sorts/counting-sort/index.js"
 
   },
   "keywords": [],
