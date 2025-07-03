@@ -25,14 +25,21 @@ function countingSort(arr: number[]): number[] {
 
     return output;
 }
-
 // Example usage:
 const arr = [4, 2, 2, 8, 3, 3, 1];
 const sorted = countingSort(arr);
 console.log(sorted); // Output: [1, 2, 2, 3, 3, 4, 8]
 
-// phase 1: [4,2,2,8,3,3,1] → [2,4,2,8,3,3,1] → [2,2,4,8,3,3,1] → [2,2,4,8,3,3,1] → [2,2,4,3,8,3,1] → [2,2,4,3,3,8,1] → [2,2,4,3,3,1,8]
-// phase 2: [2,2,4,3,3,1,8] → [2,2,4,3,3,1,8] → [2,2,3,4,3,1,8] → [2,2,3,3,4,1,8] → [2,2,3,3,1,4,8]
-// phase 3: [2,2,3,3,1,4,8] → [2,2,3,3,1,4,8] → [2,2,3,1,3,4,8] → [2,2,1,3,3,4,8]
-// phase 4: [2,2,1,3,3,4,8] → [2,1,2,3,3,4,8] → [1,2,2,3,3,4,8]
-// phase 5: no swaps needed, algorithm terminates
+// Counting Sort phases:
+// phase 1: Find max value in arr → max = 8
+// phase 2: Count occurrences → count = [0,1,2,0,1,0,0,0,1,0] (indices 0..8)
+// phase 3: Compute cumulative counts → count = [0,1,3,3,4,4,4,4,5,5]
+// phase 4: Place elements in output array (right to left for stability)
+//   - Place 1: output[0] = 1, count[1]--
+//   - Place 3: output[2] = 3, count[3]--
+//   - Place 3: output[1] = 3, count[3]--
+//   - Place 8: output[4] = 8, count[8]--
+//   - Place 2: output[2] = 2, count[2]--
+//   - Place 2: output[1] = 2, count[2]--
+//   - Place 4: output[3] = 4, count[4]--
+// phase 5: Output array is [1,2,2,3,3,4,8]
