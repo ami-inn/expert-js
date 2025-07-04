@@ -9,7 +9,8 @@
     "start:bubble-sort": "node dist/sorts/bubble-sort/index.js",
     "start:bogo-sort": "node dist/sorts/bogo-sort/index.js",
     "start:counting-sort": "node dist/sorts/counting-sort/index.js",
-    "start:cycle-sort": "node dist/sorts/cycle-sort/index.js"
+    "start:cycle-sort": "node dist/sorts/cycle-sort/index.js",
+    "start:gnome-sort": "node dist/sorts/gnome-sort/index.js"
 
   },
   "keywords": [],

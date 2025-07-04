@@ -14,7 +14,7 @@ export const gnomeSort = (array: number[]): number[] => {
 // Example usage:
 const arr = [7, 2, 12, 8, 3];
 const sorted = gnomeSort(arr);
-console.log(sorted); // Output: [2, 3, 7, 8,
+console.log(sorted); // Output: [2, 3, 7, 8, 12]
 
 // phase 1 : [7, 2, 12, 8, 3] → [2, 7, 12, 8, 3] → [2, 3, 12, 8, 7]
 // phase 2 : [2, 3, 12, 8, 7] (no swaps needed)
