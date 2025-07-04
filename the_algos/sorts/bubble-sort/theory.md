@@ -76,7 +76,7 @@ Now, the third largest number (**7**) is in place.
 Only compare the first two elements:
 
 1. Compare **2** and **3**. 2 < 3, so no swap.
-   ```
+   ``` 
    [2, 3, 7, 8, 12]
    ```
 
