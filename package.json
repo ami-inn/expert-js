@@ -14,7 +14,10 @@
     "start:heap-sort": "node dist/sorts/heap-sort/index.js",
     "start:insertion-sort": "node dist/sorts/insertion-sort/index.js",
     "start:quick-sort": "node dist/sorts/quick-sort/index.js",
-    "start:selection-sort": "node dist/sorts/selection-sort/index.js"
+    "start:selection-sort": "node dist/sorts/selection-sort/index.js",
+    "start:shell-sort": "node dist/sorts/shell-sort/index.js",
+    "start:swap-sort": "node dist/sorts/swap-sort/index.js",
+    "start:tree-sort": "node dist/sorts/tree-sort/index.js"
 
 
 
