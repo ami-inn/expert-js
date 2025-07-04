@@ -13,7 +13,9 @@
     "start:gnome-sort": "node dist/sorts/gnome-sort/index.js",
     "start:heap-sort": "node dist/sorts/heap-sort/index.js",
     "start:insertion-sort": "node dist/sorts/insertion-sort/index.js",
-    "start:quick-sort": "node dist/sorts/quick-sort/index.js"
+    "start:quick-sort": "node dist/sorts/quick-sort/index.js",
+    "start:selection-sort": "node dist/sorts/selection-sort/index.js"
+
 
 
   },
