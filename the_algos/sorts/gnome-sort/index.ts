@@ -16,9 +16,13 @@ const arr = [7, 2, 12, 8, 3];
 const sorted = gnomeSort(arr);
 console.log(sorted); // Output: [2, 3, 7, 8, 12]
 
-// phase 1 : [7, 2, 12, 8, 3] → [2, 7, 12, 8, 3] → [2, 3, 12, 8, 7]
-// phase 2 : [2, 3, 12, 8, 7] (no swaps needed)
-// phase 3 : [2, 3, 12, 8, 7] → [2, 3, 7, 8, 12]
-// phase 4 : [2, 3, 7, 8, 12] (no swaps needed)
-// phase 5 : [2, 3, 7, 8, 12] (no swaps needed, algorithm terminates)
-// gnomeSort([7, 2, 12, 8, 3]); // Output: [2, 3, 7, 8, 12]
+// phases
+// phase 1: [7, 2, 12, 8, 3]
+// phase 2: [2, 7, 12, 8, 3]    // 7 and 2 swapped
+// phase 3: [2, 7, 12, 8, 3]    // 7 <= 12, move forward
+// phase 4: [2, 7, 8, 12, 3]    // 12 and 8 swapped
+// phase 5: [2, 7, 8, 12, 3]    // 8 <= 12, move forward
+// phase 6: [2, 7, 8, 3, 12]    // 12 and 3 swapped
+// phase 7: [2, 7, 3, 8, 12]    // 8 and 3 swapped
+// phase 8: [2, 3, 7, 8, 12]    // 7 and 3 swapped
+// phase 9: [2, 3, 7, 8, 12]    // sorted

@@ -44,10 +44,7 @@ export const cycleSort = (array: number[]): number[] => {
 console.log(cycleSort([7, 2, 12, 8, 3])); // Output: [2, 3, 7, 8, 12]
 
 // phases
-/*
-phase 1: [7,2,12,8,3] → [2,7,12,8,3] → [2,3,12,8,7]
-phase 2: [2,3,12,8,7] (no swaps needed)
-phase 3: [2,3,12,8,7] → [2,3,7,8,12]
-phase 4: [2,3,7,8,12] (no swaps needed)
-phase 5: [2,3,7,8,12] (no swaps needed, algorithm terminates)
-*/
+// phase 1: [7, 2, 12, 8, 3]
+// phase 2: [2, 7, 12, 8, 3]
+// phase 3: [2, 3, 12, 8, 7]
+// phase 4: [2, 3, 7, 8, 12]

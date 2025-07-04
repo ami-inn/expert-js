@@ -38,10 +38,14 @@ console.log("Sorted array:", sortedArr);
 // Output: Sorted array: [2, 3, 7, 8, 9, 10, 12]
 
 // Explanation of phases:
-// phase 1 [7, 2, 12, 8, 3, 10, 9] → [2, 3, 7, 8, 9, 10, 12 ]
-// phase 2 [2, 3, 7, 8, 9, 10, 12] (no swaps needed)
-// phase 3 [2, 3, 7, 8, 9, 10, 12] (no swaps needed)
-// phase 4 [2, 3, 7, 8, 9, 10, 12] (no swaps needed)
-// phase 5 [2, 3, 7, 8, 9, 10, 12] (no swaps needed, algorithm terminates)
-// Sorted array will look like: [2, 3, 7, 8, 9, 10, 12]
-// Indices:                      0  1  2  3  4  5  6
+// 1. Build max heap:
+//    [12, 8, 10, 2, 3, 7, 9]
+// 2. Swap max with last, heapify:
+//    [10, 8, 9, 2, 3, 7, 12]
+//    [9, 8, 7, 2, 3, 10, 12]
+//    [8, 3, 7, 2, 9, 10, 12]
+//    [7, 3, 2, 8, 9, 10, 12]
+//    [3, 2, 7, 8, 9, 10, 12]
+//    [2, 3, 7, 8, 9, 10, 12]
+// 3. Sorted array:
+//    [2, 3, 7, 8, 9, 10, 12]
