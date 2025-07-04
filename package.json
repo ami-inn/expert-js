@@ -10,7 +10,10 @@
     "start:bogo-sort": "node dist/sorts/bogo-sort/index.js",
     "start:counting-sort": "node dist/sorts/counting-sort/index.js",
     "start:cycle-sort": "node dist/sorts/cycle-sort/index.js",
-    "start:gnome-sort": "node dist/sorts/gnome-sort/index.js"
+    "start:gnome-sort": "node dist/sorts/gnome-sort/index.js",
+    "start:heap-sort": "node dist/sorts/heap-sort/index.js",
+    "start:insertion-sort": "node dist/sorts/insertion-sort/index.js"
+
 
   },
   "keywords": [],
