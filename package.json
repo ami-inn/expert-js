@@ -17,7 +17,10 @@
     "start:selection-sort": "node dist/sorts/selection-sort/index.js",
     "start:shell-sort": "node dist/sorts/shell-sort/index.js",
     "start:swap-sort": "node dist/sorts/swap-sort/index.js",
-    "start:tree-sort": "node dist/sorts/tree-sort/index.js"
+    "start:tree-sort": "node dist/sorts/tree-sort/index.js",
+
+    "start:generate-combination": "node dist/back-tracking/all-combination-of-size-k/index.js",
+    "start generate-parentheses": "node dist/back-tracking/generate-parentheses/index.js"
 
 
 
