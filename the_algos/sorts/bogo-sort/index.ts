@@ -7,6 +7,7 @@ function isSorted(arr: number[]): boolean {
   return true;
 }
 
+
 function shuffle(arr: number[]): number[] {
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -23,6 +24,7 @@ function bogoSort(arr: number[]): number[] {
 }
 
 console.log(bogoSort([5, 3, 8, 4, 2])); // Output: [2, 3, 4, 5, 8]
+
 // Note: Bogo sort is highly inefficient and not suitable for large arrays. It is primarily used for educational purposes to illustrate the concept of sorting algorithms.
 // This implementation is a simple demonstration of the algorithm.
 // cant predict the output as it depends on random shuffling
